@@ -1,0 +1,583 @@
+@font-face {
+  font-family: "blackrush";
+  src: url("fonts/blackrush.woff2") format("woff2"),
+    url("fonts/blackrush.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 145px;
+}
+
+#main_header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  h1 {
+    font-family: blackrush;
+    font-size: 85px;
+    color: white;
+    margin-top: 95px;
+  }
+}
+
+.main_img {
+  background-image: url("images/main.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+
+nav {
+  background-color: black;
+
+  ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+
+    .logo {
+      margin-right: auto;
+
+      img {
+        width: 200px;
+        filter: invert(1);
+      }
+    }
+
+    li {
+      padding: 8px 16px;
+      text-align: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.home #navbar {
+  background: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+  transition: 0.5s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+  }
+}
+
+#navbar.scrolled,
+body:not(.home) #navbar {
+  background: #cc742d;
+}
+
+.main_content {
+  padding-top: 35px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: blackrush;
+  font-size: 85px;
+  color: #cc742d;
+  margin: 10px 0 30px 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: blackrush;
+  font-size: 85px;
+  color: #cc742d;
+  margin-top: 70px;
+}
+
+.spotlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+
+  a {
+    text-decoration: none;
+
+    h4 {
+      color: #cc742d;
+      padding: 16px 10px;
+    }
+    p {
+      color: black;
+    }
+  }
+
+  .card {
+    width: 290px;
+    padding: 20px;
+    height: 510px;
+
+    .spotlight_image {
+      width: 250px;
+      height: 250px;
+      padding: 20px;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 2px 16px;
+      text-align: center;
+    }
+  }
+  .card:hover {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+#feedback {
+  margin: 0 auto;
+  width: 50%;
+
+  div label:first-child {
+    display: block;
+  }
+
+  label {
+    padding: 20px;
+  }
+
+  .two_line {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  input[type="radio"] {
+    padding: 12px 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    resize: none;
+  }
+}
+button {
+  display: block;
+  background-color: #cc742d;
+  color: white;
+  padding: 10px;
+  margin: 5px 5px 5px auto;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 10px;
+  margin-top: 35px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main_content.dance_and_music {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-family: blackrush;
+    font-size: 85px;
+    color: #cc742d;
+    margin: 5px 0 30px 0;
+  }
+
+  .music.left,
+  .music.right {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .music.left img,
+  .music.right img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .music.left h3,
+  .music.right h3 {
+    font-family: blackrush;
+    color: #cc742d;
+    font-size: 4.5em;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .music.right h3 {
+    text-align: right;
+  }
+
+  .music.left p,
+  .music.right p {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    text-indent: 75px;
+    text-align: justify;
+    width: 900px;
+  }
+
+  .music.left div:first-child,
+  .music.right div:first-child {
+    flex-shrink: 0;
+  }
+
+  .music.right div:first-child {
+    order: 2;
+  }
+
+  .music.right div:last-child {
+    order: 1;
+  }
+}
+
+.main_content.folklore {
+  
+}
+.page_title {
+  display: flex;
+  justify-content: center;
+  font-family: blackrush;
+  font-size: 85px;
+  color: #cc742d;
+  margin: 5px 0 30px 0;
+}
+
+.main_content.food_and_cuisine {
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-family: blackrush;
+    font-size: 85px;
+    color: #cc742d;
+    margin: 5px 0 30px 0;
+  }
+
+  .slideshow_container {
+    position: relative;
+    width: 735px;
+    height: 798px;
+    margin: 0 auto;
+
+    .slide {
+      position: absolute;
+      width: 650px;
+      height: 500px;
+      display: none;
+      left: 50%;
+      translate: -50%;
+    }
+    .slide-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    .slide img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+    .slide:first-child {
+      display: block;
+    }
+    .slide p {
+      margin-top: 30px;
+      font-size: 1.3em;
+      text-indent: 75px;
+      text-align: justify;
+      width: 650px;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #cc742d;
+      font-weight: bold;
+      font-size: 24px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.main_content.craftsmanship {
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-family: blackrush;
+    font-size: 85px;
+    color: #cc742d;
+    margin: 5px 0 30px 0;
+  }
+
+  h2 {
+    font-size: 190px;
+    color: lightgray;
+  }
+  .section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax {
+    background-image: url("images/crafts/boat.jpg");
+  }
+  .parallax1 {
+    background-image: url("images/crafts/lacquer.png");
+  }
+  .parallax2 {
+    background-image: url("images/crafts/kasabu.jpg");
+  }
+  .parallax3 {
+    background-image: url("images/crafts/kunaa.jpg");
+  }
+  .text-bloc p {
+    margin: 75px;
+    font-size: 1.3em;
+    text-indent: 75px;
+    text-align: justify;
+  }
+}
+
+.main_content.testimonials-section {
+  padding: 30px;
+  height: 800px;
+  width: 1200px;
+  margin: 0 auto;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-family: blackrush;
+    font-size: 85px;
+    color: #cc742d;
+    margin-bottom: 15px;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .testimonial {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.333% - 40px); 
+      box-sizing: border-box;
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.main_content.nakaiy_calendar {
+  .nakaiy {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .current_nakaiy {
+      width: 35%;
+      padding-left: 20px;
+      border-left: 1px solid #ccc;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 0 auto 20px;
+      width: 300px;
+    }
+
+    .card-body {
+      margin-bottom: 0;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      color: #666;
+    }
+  }
+
+  .all_nakaiy {
+    .calendar_legend_container {
+      display: flex;
+
+      .calendar {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        justify-content: center;
+
+        .month-row {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .months {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-right: 20px;
+        }
+
+        .months span {
+          display: block;
+          font-weight: bold;
+          padding: 5px 10px;
+          background-color: #f2f2f2;
+          text-align: left;
+        }
+
+        .nakaiy-table {
+          border-collapse: collapse;
+          width: 467px;
+          max-width: 900px;
+          margin-right: 20px;
+        }
+
+        .nakaiy-table th,
+        .nakaiy-table td {
+          border: 1px solid #ddd;
+          text-align: center;
+          padding: 8px;
+
+          &.highlight {
+            outline: 2px solid black;
+          }
+        }
+
+        .nakaiy-table th {
+          background-color: #4caf50;
+          color: white;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+
+        .nakaiy-table td {
+          vertical-align: middle;
+          padding: 8px;
+        }
+
+        .nakaiy-table td.empty {
+          background-color: #f9f9f9;
+        }
+        width: 50%;
+      }
+    }
+    .legend {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 429px;
+      flex-wrap: wrap;
+      display: flex;
+      gap: 50px;
+      align-content: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    .legend-item span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+}
