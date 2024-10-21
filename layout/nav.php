@@ -6,7 +6,6 @@
         <li><a href="./food_and_cuisine.php">Food & Cuisine</a></li>
         <li><a href="./craftsmanship.php">Craftsmanship</a></li>
         <li><a href="./music_and_dance.php">Music & Dance</a></li>
-        <li><a href="./folklore.php">Folklore</a></li>
         <li><a href="./feedback.php">User Feedback</a></li>
     </ul>
 </nav>

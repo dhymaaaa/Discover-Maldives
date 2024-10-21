@@ -14,7 +14,7 @@
     <div class="main_content dance_and_music">
         <div class="music_main">
             <h1 class="page_title">Journeying through Maldivian dance and musical traditions</h1>
-            <div class="music left">
+            <div class="music">
                 <div>
                     <img src="images/music/boduberu.jpg" alt="">
                 </div>
@@ -24,7 +24,7 @@
                     <p>The dancers will start the dance based on the drumming tempo by moving their bodies, raising their hands and making diffrent twists and turns slightly crouching and bending. The songs, <i>lava</i> that are sung consists of old fisherman tales, mythical love stories and sagas from toddy collectors to each other.</p>
                 </div>
             </div>
-            <div class="music right">
+            <div class="music">
                 <div>
                     <img src="images/music/bandiyaa.jpg" alt="">
                 </div>
@@ -33,7 +33,7 @@
                     <p>Bandiyaa jehun is a popular form of dance performed by young women. They carry metal water pots and stands in 2 lines facing each other. These women sing and dance to melodious tunes while taping the rhythm on the pots with rings worn on the fingers.</p>
                 </div>
             </div>
-            <div class="music left">
+            <div class="music">
                 <div>
                     <img src="images/music/dhandi_jehun.jpeg" alt="">
                 </div>
@@ -42,7 +42,7 @@
                     <p>Dhandi jehun is a popular form of entertainment performed throughout the country to celebrate different festivals such Eid. The performance style varies from island to island with some performances featuring upto 30 men. The performane includes a lead singer who sings traditional <i>Thaara</i> or <i>Unbaa</i> songs while the remaining performers sing in harmony and dance to the beat. In the dance, each participant holds sticks referred to as <i>Dhandi</i> and strikes them agaist the sticks of the dancers across them while moving.</p>
                 </div>
             </div>
-            <div class="music right">
+            <div class="music">
                 <div>
                     <img src="images/music/thaara.jpeg" alt="">
                 </div>

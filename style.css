@@ -234,36 +234,35 @@ footer {
     margin: 5px 0 30px 0;
   }
 
-  .music.left,
-  .music.right {
+  .music {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     padding-bottom: 20px;
   }
 
-  .music.left img,
-  .music.right img {
+  .music img {
     width: 400px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
   }
 
-  .music.left h3,
-  .music.right h3 {
+  .music h3{
     font-family: blackrush;
     color: #cc742d;
     font-size: 4.5em;
     margin-top: 0;
     margin-bottom: 5px;
   }
-  .music.right h3 {
+  .music:nth-child(2n+1) h3 {
     text-align: right;
   }
+  .music:nth-child(2n) h3 {
+    text-align: left;
+  }
 
-  .music.left p,
-  .music.right p {
+  .music p {
     margin-bottom: 20px;
     font-size: 1.3em;
     text-indent: 75px;
@@ -271,23 +270,19 @@ footer {
     width: 900px;
   }
 
-  .music.left div:first-child,
-  .music.right div:first-child {
+  .music div:first-child {
     flex-shrink: 0;
   }
 
-  .music.right div:first-child {
+  .music:nth-child(2n+1) div:first-child {
     order: 2;
   }
 
-  .music.right div:last-child {
+  .music:nth-child(2n+1) div:last-child {
     order: 1;
   }
 }
 
-.main_content.folklore {
-  
-}
 .page_title {
   display: flex;
   justify-content: center;
@@ -439,7 +434,7 @@ footer {
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(33.333% - 40px); 
+      flex: 1 1 calc(33.333% - 40px);
       box-sizing: border-box;
 
       p {

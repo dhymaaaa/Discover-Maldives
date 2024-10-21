@@ -24,7 +24,7 @@
                     while ($row = mysqli_fetch_assoc($query)) {
                     ?>
                         <div class="card-body">
-                            <h3 class="card-title"><?php echo $row['name']; ?></h3>
+                            <h3 class="card-title">Current nakaiy: <?php echo $row['name']; ?></h3>
                             <?php
                             echo "<span class='nakaiy-name'>" . $row['description'] . '</span><br>';
                             $end_date = $row['end_date'];
